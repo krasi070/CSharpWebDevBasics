@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ImageFlipper", "01.ImageFlipper\01.ImageFlipper.csproj", "{0608E099-943D-444E-B30C-C691B61E8BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.WebServerWithTcpListener", "02.WebServerWithTcpListener\02.WebServerWithTcpListener.csproj", "{34B293C1-BC81-4654-92A0-F391B6C7EA0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0608E099-943D-444E-B30C-C691B61E8BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0608E099-943D-444E-B30C-C691B61E8BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0608E099-943D-444E-B30C-C691B61E8BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0608E099-943D-444E-B30C-C691B61E8BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B293C1-BC81-4654-92A0-F391B6C7EA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B293C1-BC81-4654-92A0-F391B6C7EA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B293C1-BC81-4654-92A0-F391B6C7EA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B293C1-BC81-4654-92A0-F391B6C7EA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2E8190F-A3B4-43B0-B04E-F38FD5B6F9C4}
+	EndGlobalSection
+EndGlobal
