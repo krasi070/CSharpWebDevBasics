@@ -46,8 +46,7 @@
         {
             CommonValidator.ThrowExceptionIfNullOrEmpty(requestText, nameof(requestText));
             
-            string[] requestLines = requestText
-                .Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
+            string[] requestLines = requestText.Split(Environment.NewLine);
 
             if (!requestLines.Any())
             {
@@ -63,7 +62,7 @@
             }
 
             this.Method = this.ParseMethod(requestLine[0]);
-            this.Url = requestLines[1];
+            this.Url = requestLine[1];
             this.Path = this.ParsePath(this.Url);
             this.ParseHeaders(requestLines);
             this.ParseParameters();
@@ -94,7 +93,7 @@
             for (int i = 1; i < emptyLineIndex; i++)
             {
                 string currLine = requestLines[i];
-                string[] headerParts = currLine.Split(new[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] headerParts = currLine.Split(new[] { ": " }, StringSplitOptions.RemoveEmptyEntries);
                 string headerKey = headerParts[0];
                 string headerValue = headerParts[1].Trim();
 
